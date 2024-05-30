@@ -7,10 +7,7 @@ from moviepy.editor import VideoFileClip, AudioFileClip, CompositeVideoClip
 from moviepy.video.tools.subtitles import SubtitlesClip, TextClip
 import os
 import shutil
-# import ffmpeg
-# import time
 import json
-# import sys
 import tempfile
 import uuid
 from dotenv import load_dotenv
