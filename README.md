@@ -1,5 +1,4 @@
-
-# AI Video Dubbing 
+# AI Video Dubbing
 
 # Overview
 
@@ -14,11 +13,13 @@ AI video dubbing using Google APIs involves leveraging Google's suite of machine
 - Use: Captures the spoken content in the source language accurately.
 
 # Google Cloud Translation:
+
 - Function: Translates the transcribed text from the source language into the target language.
 
 - Use: Ensures that the content is accurately translated while maintaining the context and meaning.
 
 # Google Cloud Text-to-Speech:
+
 - Function: Converts the translated text into spoken words.
 
 - Use: Generates natural-sounding speech in the target language. It supports various voices and languages.
@@ -29,27 +30,17 @@ AI video dubbing using Google APIs involves leveraging Google's suite of machine
 
 - Use: Ensures that the dubbed audio is synchronized with the video, including lip-sync and timing adjustments.
 
-
-
 ## Installation
 
-
-
 ```bash
-  python -m venv Env-AI-video-dubbing    
-  cd Env-AI-video-dubbing 
-```
-
-After this move the files and demo videos into Env-AI-video-dubbing  folder and run next step.
-
-```bash
-python -m venv AI-video-dubbing  
+  uv venv
+  .venv\Scripts\activate
 ```
 
 ```bash
-  pip install -r requirements.txt
+  uv pip install -r requirements.txt
 ```
 
 ```bash
-  python dubber.py demo4.mp4 "en-US" outputDirectory --targetLangs '["hi","gu"]'     
+  python dubber.py demo4.mp4 "en-US" outputDirectory --targetLangs '["hi","gu"]'
 ```
