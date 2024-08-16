@@ -241,7 +241,7 @@ def speakUnderDuration(text, languageCode, durationSecs, voiceName=None):
         bytes : Audio in wav format
     """
 
-    temp_dir = "D:\\temp"
+    temp_dir = "temp"
 
     with tempfile.NamedTemporaryFile(mode="w+b", dir=temp_dir, delete=False) as temp_file:
         baseAudio = speak(text, languageCode, voiceName=voiceName)
@@ -361,7 +361,9 @@ def stitch_audio(sentences, audioDir, movieFile, outFile, srtPath=None, overlayG
     # Write the final audio to a temporary output file
 
     # Create a new temporary directory
-    temp_dir = "D:\\temp"
+    temp_dir = "temp"
+     # Ensure the destination directory exists
+    os.makedirs(temp_dir, exist_ok=True)
     os.environ['TEMP'] = temp_dir
     os.environ['TMP'] = temp_dir
 
