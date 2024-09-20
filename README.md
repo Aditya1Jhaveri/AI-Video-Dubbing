@@ -2,35 +2,46 @@
 
 # Overview
 
-AI video dubbing using Google APIs involves leveraging Google's suite of machine learning and artificial intelligence tools to automatically translate and dub videos into different languages. Here’s an overview of the process and key components involved:
+AI video dubbing using Google APIs leverages various machine learning models to automate the process of translating spoken language in a video and dubbing it into another language.
+
+Cloud-based Processing allows to scale and fast processing of video dubbing tasks, enabling the handling of large volumes of videos or real-time dubbing with efficient and high-performance infrastructure.
+
+This technology can be effectively used for dubbing movies or videos that contain speech, enabling the seamless conversion from one language to another. By using Google APIs, the entire process of translating and dubbing videos can be automated and scaled, offering businesses and content creators an efficient way to make their content accessible to global audiences across multiple languages.
+
+This process involves several key components:
 
 # Key Components
 
-# Google Cloud Speech-to-Text:
+# Google Cloud Speech-to-Text (STT):
 
-- Function: Converts the audio from the original video into text.
-
-- Use: Captures the spoken content in the source language accurately.
+- Google's Speech-to-Text API transcribes the audio from the video into text in the original language.
+- It uses advanced speech recognition to ensure high accuracy, even with different accents, dialects, or background noise.
 
 # Google Cloud Translation:
 
-- Function: Translates the transcribed text from the source language into the target language.
+- Once the original speech is transcribed, Google's Translation API can be used to convert the text into a target language.
 
-- Use: Ensures that the content is accurately translated while maintaining the context and meaning.
+- Google's Neural Machine Translation (NMT) system ensures context-aware and fluent translations by using deep learning techniques to better understand language nuances.
 
-# Google Cloud Text-to-Speech:
+# Google Cloud Text-to-Speech (TTS):
 
-- Function: Converts the translated text into spoken words.
+- After the translation, Google's Text-to-Speech API takes the translated text and generates audio output in the target language.
 
-- Use: Generates natural-sounding speech in the target language. It supports various voices and languages.
+- This API allows for customization of voices, accents, speed, and pitch, making the dubbed audio sound natural and tailored to the video content.
 
 # Video Processing and Synchronization:
 
-- Function: Integrates the new audio with the original video.
+- Integrates the new audio with the original video.
 
-- Use: Ensures that the dubbed audio is synchronized with the video, including lip-sync and timing adjustments.
+- Ensures that the dubbed audio is synchronized with the video, including lip-sync and timing adjustments.
 
 ## Installation
+
+This steps need to follow after git clone.
+
+```bash
+  pip install uv
+```
 
 ```bash
   uv venv
